@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #aadcd0;
+    color: #333;
+}
+
+header {
+    background-color: #268a4e;
+    color: #f8f0f0;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+.parameterButton {
+    background-color: #95d5b4;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    margin: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #5cae7e;
+}
+
+#mainContainer {
+    background-color: #aadcd0;
+    color: white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    overflow: hidden;
+    /*border: #018786 5px solid;*/
+}
+
+#buttonsContainer {
+    background-color: #268a4e;
+    color: white;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    width : 55rem;
+}
+
+#shelvesContainer {
+    background-color: #268a4e;
+    color: white;
+    border-radius: 0.5rem;
+    display: inline-block;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 90%;
+    width : 55rem;
+    max-width: 100%;
+}
+
+.shelf{
+    background-color: #333;
+    width: 50rem;
+    margin: 2rem;
+    height: 6rem;
+    display: flex;
+    flex-direction:row;
+    align-items: flex-end;
+    justify-content: start;
+    border: #493c3c 0.5rem solid;
+    border-radius: 0.2rem;
+    overflow: hidden;
+}
+
+.book {
+    writing-mode:vertical-rl;
+    transform: rotate(180deg);
+    font-size: 1rem;
+    text-align: center;
+    background-color: var(--button-color);
+    color: var(--title-color);
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    outline: none;
+    margin: 0 0.0625rem;
+}
+
+.book:hover {
+    background-color: #1f6f3c;
+}
+
+:root {
+    --button-color: #268a4e;
+    --title-color: white;
+}
+
+#researchButton{
+    margin-left: auto;
+}
