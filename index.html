@@ -12,6 +12,7 @@
         <h1>My Bookshelf</h1>
     </header>
     <main>
+        <!-- shelves -->
         <div id = mainContainer>
             <div id = buttonsContainer> 
                 <button class = "parameterButton" id="addBookButton"><i class = "fa fa-plus"></i> New book</button>
@@ -19,10 +20,30 @@
                 <button class = "parameterButton" id="sortButton"><i class = "fa fa-sort-alpha-asc"></i> Sort</button>
                 <button class = "parameterButton" id="researchButton"><i class = "fa fa-search"></i> Search</button>
             </div>
+            <div id = displayContainer>
+                <div class = displayStat>
+                    | Total books: 50 |
+                </div>
+                <div class = displayStat>
+                    | Displayed books : 50 |
+                </div>
+            </div>
             <div id="shelvesContainer"></div>
         </div>
-    
+
+        <!-- book page -->
+        <div id="bookPage" class="book-page">
+            <div class="book-content">
+                <p id="bookTitle">Book description : </p>
+                <button id="bookCloseBtn">Close</button>
+            </div>
+        </div>
+
+        <!-- overlay -->
+        <div class="overlay" onclick="closeBookPage()"></div>
+
     </main>
     <script src="scripts/script.js"></script>
+    <script src="scripts/booksPage.js"></script>
 </body>
 </html>

@@ -19,6 +19,9 @@ fetch('books.json')
             const bookButton = document.createElement('button');
             bookButton.className = 'book';
             bookButton.textContent = book.title;
+            bookButton.addEventListener('click', function() {
+                openPage(`Book description: ${bookButton.textContent.trim()}`);
+            });
 
             // books total width
             currentShelf.appendChild(bookButton);
@@ -43,6 +46,7 @@ fetch('books.json')
         for (let i = currentShelves; i < 10; i++) {
             shelvesContainer.appendChild(createShelf());
         }
+
     })
     .catch(error => console.error('Error loading books:', error));
 

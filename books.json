@@ -1,5 +1,9 @@
 [
-    { "title": "Hunger Games" },
+    { 
+        "title": "Hunger Games",
+        "author":"Esteban",
+        "color" : "White"
+    },
     { "title": "Alien" },
     { "title": "Tom Sawyer" },
     { "title": "Moby Dick" },
