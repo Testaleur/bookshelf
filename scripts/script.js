@@ -1,8 +1,3 @@
-// document.getElementById("changeColorButton").addEventListener("click", function () {
-//     // Change the CSS variable value
-//     document.documentElement.style.setProperty('--button-color', '#ff5722'); // New color (e.g., orange)
-// });
-
 // load books
 fetch('books.json')
     .then(response => response.json())
@@ -15,13 +10,18 @@ fetch('books.json')
         let currentWidth = 0; // width of all books
 
         data.forEach((book) => {
+            bookTitle = book.title;
+            bookAuthor = book.author? book.author : "Not specified";
+            bookDate = book.date? book.date : "Not specified";
+            bookRating = book.rating? book.rating : "Not specified";
+            bookComments = book.comments? book.comments : "Not specified";
+            // bookColor = book.color? book.color : Color(white);
+
             // new book
             const bookButton = document.createElement('button');
             bookButton.className = 'book';
-            bookButton.textContent = book.title;
-            bookButton.addEventListener('click', function() {
-                openPage(`Book description: ${bookButton.textContent.trim()}`);
-            });
+            bookButton.textContent = bookTitle;
+            addPageToABook(bookButton, bookTitle, bookAuthor, bookDate, bookRating, bookComments);
 
             // books total width
             currentShelf.appendChild(bookButton);

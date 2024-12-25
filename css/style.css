@@ -138,13 +138,23 @@ button:hover {
     background-color: rgba(255, 255, 255, 0.891);
     justify-content: center;
     align-items: center;
-    gap : 0.5rem;
     padding: 1rem;
     box-sizing: border-box;
-    border: 1px solid #333;
-    resize: both;
-    overflow: auto;
+    border: 0.8rem solid #333;
+    border-radius: 1rem;
     z-index: 100;
+}
+
+#bookTitle{
+    font:bold;
+    font-size: 2rem;
+}
+
+#bookDescription{
+    max-width: 14rem;
+    padding-bottom: 1rem;
+    white-space: normal;
+    overflow: hidden;
 }
 
 .overlay {

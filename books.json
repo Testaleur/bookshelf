@@ -1,7 +1,10 @@
 [
     { 
         "title": "Hunger Games",
-        "author":"Esteban",
+        "author":"Suzanne Collins",
+        "date" : "05/10/2024",
+        "rating" : 5,
+        "comments" : "I loved this classic, thank you Suzanne",
         "color" : "White"
     },
     { "title": "Alien" },
