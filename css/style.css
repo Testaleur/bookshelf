@@ -167,3 +167,43 @@ button:hover {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 99; 
 }
+
+#bookPageBtnContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap : 0.5rem;
+}
+
+#bookCloseBtn{
+    padding : 0.1rem;
+    padding-inline: 0.5rem;
+    background-color: rgb(147, 208, 144);
+    border: 1rem rgb(0, 0, 0);
+    border-radius: 0.2rem;
+}
+
+#bookCloseBtn:hover{
+    background-color: #36b368;
+}
+
+#deleteBookBtn{
+    padding : 0.1rem;
+    padding-inline: 0.5rem;
+    background-color: rgb(229, 128, 128);
+    border: 1rem rgb(0, 0, 0);
+    border-radius: 0.2rem;
+}
+
+#deleteBookBtn:hover{
+    background-color: #dd5b5b;
+}
+
+.book-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* border: #1f6f3c 0.2rem solid; */
