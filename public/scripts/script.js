@@ -1,5 +1,5 @@
 // load books
-fetch('books.json')
+fetch('../data/books.json')
     .then(response => response.json())
     .then(data => {
         const shelvesContainer = document.getElementById('shelvesContainer');
