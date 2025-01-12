@@ -4,8 +4,8 @@ const fs = require("fs");
 const app = express();
 const port = 3000;
 
-// root
 app.use(express.static("public"));
+app.use(express.json());
 
 // Endpoint to get JSON data
 app.get("/data", (req, res) => {
@@ -18,25 +18,31 @@ app.get("/data", (req, res) => {
 });
 
 // Endpoint to add data to the JSON file
-app.post("/data", (req, res) => {
-    const newData = req.body;
+app.post("/new-book", (req, res) => {
+    const newBook = req.body;
 
-    fs.readFile("books.json", "utf8", (err, data) => {
+    fs.readFile("public/data/books.json", "utf8", (err, data) => {
+
         if (err) {
+            console.error('Error reading file:', err);
             return res.status(500).send("Error reading file");
         }
 
         const jsonData = JSON.parse(data);
-        jsonData.push(newData); // Add new data to the array
+        jsonData.push(newBook);
 
-        fs.writeFile("books.json", JSON.stringify(jsonData, null, 2), "utf8", (err) => {
+        fs.writeFile("public/data/books.json", JSON.stringify(jsonData, null, 2), "utf8", (err) => {
             if (err) {
                 return res.status(500).send("Error writing file");
             }
-            res.status(200).send("Data added successfully");
+            res.json({ message: `Received data: new book title = ${newBook.title}`,
+                title : newBook.title
+             },
+            );
         });
     });
 });
+
 
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);

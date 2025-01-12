@@ -6,6 +6,7 @@
     <title>My Bookshelf</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -15,7 +16,7 @@
         <!-- shelves -->
         <div id = mainContainer>
             <div id = buttonsContainer> 
-                <button class = "parameterButton" id="addBookButton"><i class = "fa fa-plus"></i> New book</button>
+                <button class = "parameterButton" id="addBookOpenInterface"><i class = "fa fa-plus"></i> New book</button>
                 <button class = "parameterButton" id="filterButton"><i class = "fa fa-filter"></i> Filter</button>
                 <button class = "parameterButton" id="sortButton"><i class = "fa fa-sort-alpha-asc"></i> Sort</button>
                 <button class = "parameterButton" id="researchButton"><i class = "fa fa-search"></i> Search</button>
@@ -43,12 +44,28 @@
             </div>
         </div>
 
-        <!-- overlay -->
+        <!-- overlay book page -->
         <div class="overlay" onclick="closeBookPage()"></div>
 
+        <!-- new book page -->
+        <div id="newBookPage" class="book-page">
+            <div class="button-content">
+                <span>hhhhhh</span>
+                <div id = "bookPageBtnContainer">
+                    <button id="closeInterfaceBtn">Close</button>
+                    <button id="addBookButton">Add</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- overlay new book -->
+        <div class="overlay" onclick="closeAddBookPage()"></div>
+
     </main>
-    <script src="scripts/script.js"></script>
+    <script src="scripts/loadBooksAtStart.js"></script>
     <script src="scripts/booksPage.js"></script>
-    <script src="scripts/addOrDeleteBook.js"></script>
+    <script src="scripts/addBookServer.js"></script>
+    <script src="scripts/addBookInterface.js"></script>
+    <script src="scripts/deleteBook.js"></script>
 </body>
 </html>
