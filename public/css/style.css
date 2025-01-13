@@ -206,4 +206,65 @@ button:hover {
     align-items: center;
 }
 
+#addBookButton{
+    padding : 0.1rem;
+    padding-inline: 0.5rem;
+    background-color: rgb(147, 208, 144);
+    border: 1rem rgb(0, 0, 0);
+    border-radius: 0.2rem;
+}
+
+#addBookButton:hover{
+    background-color: #36b368;
+}
+
+.add-book-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#bookPageBtnContainer{
+    margin-top: 1rem;
+}
+
+#closeInterfaceBtn{
+    padding : 0.1rem;
+    padding-inline: 0.5rem;
+    background-color: rgb(229, 128, 128);
+    border: 1rem rgb(0, 0, 0);
+    border-radius: 0.2rem;
+}
+
+#closeInterfaceBtn:hover{
+    background-color: #dd5b5b;
+}
+
+.inputContainer{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+}
+
+#commentsInput {
+    resize: none; 
+}
+
+.star {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: gray;
+}
+.star.selected {
+    color: gold;
+}
+#starsContainer {
+    display: inline-block;
+}
+
 /* border: #1f6f3c 0.2rem solid; */

@@ -49,11 +49,42 @@
 
         <!-- new book page -->
         <div id="newBookPage" class="book-page">
-            <div class="button-content">
-                <span>hhhhhh</span>
+            <div class="add-book-content">
+                <div class = inputContainer>
+                    <label for="titleInput">Title : </label>
+                    <input type="text" id="titleInput" name="titleInput">
+                </div>
+                
+                <div class = inputContainer>
+                    <label for="authorInput">Author : </label>
+                    <input type="text" id="authorInput" name="authorInput">
+                </div>
+
+                <div class = inputContainer>
+                    <label for="dateInput">Date : </label>
+                    <input type="text" id="dateInput" name="dateInput">
+                </div>
+
+                <div class="inputContainer">
+                    <label for="ratingInput">Rating : </label>
+                    <div id="starsContainer">
+                    </div>
+                    <input type="hidden" id="ratingInput" name="ratingInput">
+                </div>
+
+                <div class = inputContainer>
+                    <label for="commentsInput">Comments : </label>
+                    <textarea id="commentsInput" name="commentsInput" rows="3"></textarea>
+                </div>
+
+                <!-- <div class = inputContainer>
+                    <label for="colorInput">Color :</label>
+                    <input type="text" id="colorInput" name="colorInput">
+                </div> -->
+                
                 <div id = "bookPageBtnContainer">
-                    <button id="closeInterfaceBtn">Close</button>
-                    <button id="addBookButton">Add</button>
+                    <button id="closeInterfaceBtn">Cancel</button>
+                    <button id="addBookButton"><i class = "fa fa-plus"></i> Add</button>
                 </div>
             </div>
         </div>
@@ -67,5 +98,6 @@
     <script src="scripts/addBookServer.js"></script>
     <script src="scripts/addBookInterface.js"></script>
     <script src="scripts/deleteBook.js"></script>
+    
 </body>
 </html>
