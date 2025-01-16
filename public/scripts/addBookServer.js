@@ -1,34 +1,56 @@
 // add a book
+const titleInput = document.getElementById('titleInput');
+const authorInput = document.getElementById('authorInput');
+const dateInput = document.getElementById('dateInput');
+const ratingInput = document.getElementById('ratingInput');
+const commentsInput = document.getElementById('commentsInput');
+
 document.getElementById('addBookButton').addEventListener('click', () => {
     const newBookData = {
-        title: 'THIS IS A NEW BOOK'
+        title: titleInput.value,
+        author: authorInput.value,
+        date: dateInput.value,
+        rating: ratingInput.value,
+        comments: commentsInput.value,
     };
 
-    fetch('/new-book', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(newBookData)
-    })
-
-    .then(response => {
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
+    if(newBookData.title != ""){
+        if(newBookData.author != ""){
+            if(newBookData.date != ""){
+                fetch('/new-book', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(newBookData)
+                })
+            
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+            
+                .then(dataReceived => {
+                    prepareThePlaceForABook(dataReceived)
+                })
+            
+                .catch(error => {
+                    console.error('Error making request:', error);
+                });
+                // close the interface
+                closeAddBookPage()
+            } else {
+                console.log("please fill up the date field")
+            }
+        } else {
+            console.log("please fill up the author field")
         }
-        return response.json();
-    })
-
-    .then(dataReceived => {
-        prepareThePlaceForABook(dataReceived)
-    })
-
-    .catch(error => {
-        console.error('Error making request:', error);
-    });
-
-    // close the interface
-    closeAddBookPage()
+    } else {
+        console.log("please fill up the title field")
+    }
+   
 });
 
 function prepareThePlaceForABook(dataReceived){
@@ -38,18 +60,19 @@ function prepareThePlaceForABook(dataReceived){
 }
 
 function addTheBookToPage(book, currentShelf, shelvesContainer){
-
+    console.log(book)
     bookTitle = book.title;
     bookAuthor = book.author? book.author : "Not specified";
     bookDate = book.date? book.date : "Not specified";
-    bookRating = book.rating? book.rating : "Not specified";
-    bookComments = book.comments? book.comments : "Not specified";
+    bookRating = book.rating && book.rating != 0? book.rating : "0";
+    bookComments = book.comments? book.comments : "-";
     // bookColor = book.color? book.color : Color(white);
 
     // new book
     const bookButton = document.createElement('button');
     bookButton.className = 'book';
     bookButton.textContent = bookTitle;
+    console.log("add page to book?")
     addPageToABook(bookButton, bookTitle, bookAuthor, bookDate, bookRating, bookComments); // link the page you can open with details on the book
 
     // books total width

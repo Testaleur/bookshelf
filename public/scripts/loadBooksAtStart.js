@@ -19,6 +19,7 @@ fetch('../data/books.json')
         //     shelvesContainer.appendChild(createShelf());
         // }
     })
+
     .catch(error => console.error('Error loading books:', error));
 
 // create new shelf

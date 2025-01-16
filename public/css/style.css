@@ -259,12 +259,18 @@ button:hover {
     font-size: 1.5rem;
     cursor: pointer;
     color: gray;
+    user-select: none;
 }
 .star.selected {
     color: gold;
 }
 #starsContainer {
     display: inline-block;
+}
+
+#commentsInput{
+    font-family: Arial, sans-serif;
+    font-size: 0.85rem;
 }
 
 /* border: #1f6f3c 0.2rem solid; */

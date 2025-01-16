@@ -89,12 +89,10 @@
     "title": "Harry Potter"
   },
   {
-    "title": "THIS IS A NEW BOOK"
-  },
-  {
-    "title": "THIS IS A NEW BOOK"
-  },
-  {
-    "title": "THIS IS A NEW BOOK"
+    "title": "FIrst book?",
+    "author": "is this working?",
+    "date": "16/01/2025",
+    "rating": "0",
+    "comments": ""
   }
 ]

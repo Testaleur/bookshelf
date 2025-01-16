@@ -22,14 +22,17 @@ function closeBookPage(){
 }
 
 function addPageToABook(book, bookTitle, bookAuthor, bookDate, bookRating, bookComments) {
+    console.log('adding page...')
+    console.log(bookAuthor)
     book.addEventListener('click', function () {
+        console.log("?")
         title = bookTitle.trim();
         description = `
             Author: ${bookAuthor.trim()}\n
             Finish Date: ${bookDate.trim()}\n
             Rating: ${
-                bookRating == "Not specified"
-                    ? "Not specified"
+                bookRating == "0"
+                    ? "-"
                     : "★".repeat(bookRating) + "☆".repeat(10 - bookRating)
             }\n
             Comments: ${bookComments.trim()}

@@ -36,7 +36,11 @@ app.post("/new-book", (req, res) => {
                 return res.status(500).send("Error writing file");
             }
             res.json({ message: `Received data: new book title = ${newBook.title}`,
-                title : newBook.title
+                title : newBook.title,
+                author : newBook.author,
+                date : newBook.date,
+                rating : newBook.rating,
+                comments : newBook.comments
              },
             );
         });
