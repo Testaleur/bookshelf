@@ -1,5 +1,28 @@
 {
   "dependencies": {
+    "dotenv": "^16.4.7",
     "express": "^4.21.2"
+  },
+  "name": "bookshelf",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon backend/server.js"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Testaleur/bookshelf.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Testaleur/bookshelf/issues"
+  },
+  "homepage": "https://github.com/Testaleur/bookshelf#readme",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
   }
 }
