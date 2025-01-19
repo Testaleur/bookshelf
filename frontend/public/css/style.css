@@ -293,6 +293,7 @@ button:hover {
     background-color: rgb(229, 128, 128);
     border: 1rem rgb(0, 0, 0);
     border-radius: 0.2rem;
+    transition: background-color 0.3s ease;
 }
 
 #closeInterfaceBtn:hover{
@@ -329,6 +330,90 @@ button:hover {
 #commentsInput{
     font-family: Arial, sans-serif;
     font-size: 0.85rem;
+}
+
+
+.button-interface {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.891);
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    z-index: 100;
+    border: #333 0.4rem solid;
+}
+
+.buttonTitle{
+    font:bold;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.filter-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+
+#closeFilterBtn{
+    padding : 0.1rem;
+    padding-inline: 0.5rem;
+    background-color: rgb(229, 128, 128);
+    border: 1rem rgb(0, 0, 0);
+    border-radius: 0.2rem;
+    transition: background-color 0.3s ease;
+}
+
+#closeFilterBtn:hover{
+    background-color: #dd5b5b;
+}
+
+#applyTheFilterBtn{
+    padding : 0.1rem;
+    padding-inline: 0.5rem;
+    background-color: rgb(147, 208, 144);
+    border: 1rem rgb(0, 0, 0);
+    border-radius: 0.2rem;
+    transition: background-color 0.3s ease;
+}
+
+#applyTheFilterBtn:hover{
+    background-color: #36b368;
+}
+
+#resetFilterBtn{
+    padding : 0.1rem;
+    padding-inline: 0.5rem;
+    background-color: rgb(240, 185, 46);
+    border: 1rem rgb(0, 0, 0);
+    border-radius: 0.2rem;
+    transition: background-color 0.3s ease;
+}
+
+#resetFilterBtn:hover{
+    background-color: #e19626;
+}
+
+#typeInputFilter option[value="Book"] {
+    background-color: var(--book-color);
+    color: white;
+}
+
+#typeInputFilter option[value="Movie"] {
+    background-color: var(--movie-color);
+    color: white;
+}
+
+#typeInputFilter option[value="Series"] {
+    background-color: var(--series-color);
+    color: white;
 }
 
 /* border: #1f6f3c 0.2rem solid; */

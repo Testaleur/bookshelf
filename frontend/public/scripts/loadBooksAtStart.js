@@ -2,22 +2,11 @@
 fetch('../data/books.json')
     .then(response => response.json())
     .then(data => {
-        const shelvesContainer = document.getElementById('shelvesContainer');
-        let currentShelf = createShelf(); // first shelf
-        shelvesContainer.appendChild(currentShelf);
         const shelfWidth = currentShelf.offsetWidth;
-
-        let currentWidth = 0; // width of all books
 
         data.forEach((book) => {
             prepareThePlaceForABook(book, currentShelf, shelvesContainer)
         });
-
-        // // min of 10 shelves
-        // const currentShelves = shelvesContainer.querySelectorAll('.shelf').length;
-        // for (let i = currentShelves; i < 10; i++) {
-        //     shelvesContainer.appendChild(createShelf());
-        // }
     })
 
     .catch(error => console.error('Error loading books:', error));

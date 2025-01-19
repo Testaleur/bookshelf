@@ -1,8 +1,18 @@
-color stars in pages
+edit a book
+order css files
+
 filter button page
 sort button page
 search option
-display total option
+
+color stars in pages
+display total number of book
+
+number of times read/seen
+wish list
+
+color filter type of books
+
 big button ADD bottom left
 make possible the choice of colors
 move a book in the library (drag and drop)

@@ -60,8 +60,6 @@ document.getElementById('addBookButton').addEventListener('click', () => {
 });
 
 function prepareThePlaceForABook(dataReceived){
-    const shelvesContainer = document.getElementById('shelvesContainer');
-    let currentShelf = shelvesContainer.lastElementChild;
     addTheBookToPage(dataReceived, currentShelf, shelvesContainer)
 }
 
