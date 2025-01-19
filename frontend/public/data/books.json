@@ -1,14 +1,12 @@
 [
   {
-    "title": "Hunger Games",
-    "author": "Suzanne Collins",
-    "date": "05/10/2024",
-    "rating": 5,
-    "comments": "I loved this classic, thank you Suzanne",
-    "color": "White"
+    "title": "Tom Sawyer"
   },
   {
-    "title": "Alien"
+    "title": "1984"
+  },
+  {
+    "title": "Harry Potter"
   },
   {
     "title": "Tom Sawyer"
@@ -26,12 +24,6 @@
     "title": "Harry Potter"
   },
   {
-    "title": "Hunger Games"
-  },
-  {
-    "title": "Alien"
-  },
-  {
     "title": "Tom Sawyer"
   },
   {
@@ -45,75 +37,12 @@
   },
   {
     "title": "Harry Potter"
-  },
-  {
-    "title": "Hunger Games"
-  },
-  {
-    "title": "Alien"
-  },
-  {
-    "title": "Tom Sawyer"
-  },
-  {
-    "title": "Moby Dick"
-  },
-  {
-    "title": "1984"
-  },
-  {
-    "title": "To Kill a Mockingbird"
-  },
-  {
-    "title": "Harry Potter"
-  },
-  {
-    "title": "Hunger Games"
-  },
-  {
-    "title": "Alien"
-  },
-  {
-    "title": "Tom Sawyer"
-  },
-  {
-    "title": "Moby Dick"
-  },
-  {
-    "title": "1984"
-  },
-  {
-    "title": "To Kill a Mockingbird"
-  },
-  {
-    "title": "Harry Potter"
-  },
-  {
-    "title": "FIrst book?",
-    "author": "is this working?",
-    "date": "16/01/2025",
-    "rating": "0",
-    "comments": ""
   },
   {
     "title": "a",
     "author": "b",
     "date": "18/01/2025",
     "rating": "5",
-    "comments": ""
-  },
-  {
-    "title": "zadzs",
-    "author": "este",
-    "date": "18/01/2025",
-    "rating": "8",
-    "comments": ""
-  },
-  {
-    "title": "heyt",
-    "author": "este",
-    "date": "18/01/2025",
-    "rating": "6",
     "comments": ""
   },
   {

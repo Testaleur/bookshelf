@@ -60,7 +60,6 @@ function prepareThePlaceForABook(dataReceived){
 }
 
 function addTheBookToPage(book, currentShelf, shelvesContainer){
-    console.log(book)
     bookTitle = book.title;
     bookAuthor = book.author? book.author : "Not specified";
     bookDate = book.date? book.date : "Not specified";
@@ -71,8 +70,8 @@ function addTheBookToPage(book, currentShelf, shelvesContainer){
     // new book
     const bookButton = document.createElement('button');
     bookButton.className = 'book';
+    bookButton.id = bookTitle ;
     bookButton.textContent = bookTitle;
-    console.log("add page to book?")
     addPageToABook(bookButton, bookTitle, bookAuthor, bookDate, bookRating, bookComments); // link the page you can open with details on the book
 
     // books total width

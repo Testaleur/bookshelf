@@ -25,7 +25,8 @@ header {
     cursor: pointer;
     border-radius: 0.2rem;
     transition: background-color 0.3s;
-    color : #333
+    color : #333;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
@@ -106,6 +107,7 @@ button:hover {
     outline: none;
     margin: 0 0.0625rem;
     color : white;
+    transition: background-color 0.1s ease;
 }
 
 .book:hover {
@@ -120,6 +122,7 @@ button:hover {
 #researchButton{
     margin-right: 1rem;
     margin-left: auto;
+    transition: background-color 0.3s ease;
 }
 
 .displayStat{
@@ -181,24 +184,42 @@ button:hover {
     background-color: rgb(147, 208, 144);
     border: 1rem rgb(0, 0, 0);
     border-radius: 0.2rem;
+    transition: background-color 0.3s ease;
 }
 
 #bookCloseBtn:hover{
     background-color: #36b368;
 }
 
-#deleteBookBtn{
+#deleteBookBtn.default {
     padding : 0.1rem;
     padding-inline: 0.5rem;
     background-color: rgb(229, 128, 128);
     border: 1rem rgb(0, 0, 0);
     border-radius: 0.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-#deleteBookBtn:hover{
+#deleteBookBtn.default:hover {
     background-color: #dd5b5b;
 }
 
+#deleteBookBtn.confirmation {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    transition: background-color 0.3s ease;
+    padding : 0.1rem;
+    padding-inline: 0.5rem;
+    border: 1rem rgb(0, 0, 0);
+    border-radius: 0.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#deleteBookBtn.confirmation:hover {
+    background-color: gray;
+}
 .book-content{
     display: flex;
     flex-direction: column;
@@ -212,6 +233,7 @@ button:hover {
     background-color: rgb(147, 208, 144);
     border: 1rem rgb(0, 0, 0);
     border-radius: 0.2rem;
+    transition: background-color 0.3s ease;
 }
 
 #addBookButton:hover{

@@ -37,3 +37,33 @@ export const addBook = (req, res) => {
         });
     });
 }
+
+export const deleteBook = (req, res) => {
+    const book = req.body;
+
+    fs.readFile("frontend/public/data/books.json", "utf8", (err, data) => {
+
+        if (err) {
+            console.error('Error reading file:', err);
+            return res.status(500).send("Error reading file");
+        }
+
+        const jsonData = JSON.parse(data);
+
+        const index = jsonData.findIndex(item => item.title == book.title); // index of the book
+
+        if (index !== -1) {
+
+            jsonData.splice(index, 1);
+
+            fs.writeFile("frontend/public/data/books.json", JSON.stringify(jsonData, null, 2), "utf8", (err) => {
+                if (err) {
+                    return res.status(500).send("Error writing file");
+                }
+                res.json({ title : book.title});
+            });
+        } else {
+            res.status(404).send(`Book with title "${book.title}" not found.`);
+        }
+    });
+}

@@ -1,5 +1,5 @@
 import express from 'express';
-import { addBook, getData } from '../controllers/books.controller.js';
+import { addBook, getData, deleteBook} from '../controllers/books.controller.js';
 
 export const router = express.Router();
 
@@ -8,5 +8,8 @@ router.get("/data", getData);
 
 // // add a book to the json
 router.post("/new-book", addBook);
+
+// delete a book
+router.delete("/deleteBook", deleteBook)
 
 export default router;

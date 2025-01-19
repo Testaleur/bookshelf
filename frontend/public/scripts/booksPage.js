@@ -19,13 +19,11 @@ document.getElementById('bookCloseBtn').addEventListener('click', function() {
 function closeBookPage(){
     document.getElementsByClassName('overlay')[0].style.display = 'none';
     document.getElementById('bookPage').style.display = 'none';
+    resetButtonDelete()
 }
 
 function addPageToABook(book, bookTitle, bookAuthor, bookDate, bookRating, bookComments) {
-    console.log('adding page...')
-    console.log(bookAuthor)
     book.addEventListener('click', function () {
-        console.log("?")
         title = bookTitle.trim();
         description = `
             Author: ${bookAuthor.trim()}\n
