@@ -1,0 +1,8 @@
+color stars in pages
+filter button page
+sort button page
+search option
+display total option
+big button ADD bottom left
+make possible the choice of colors
+move a book in the library (drag and drop)

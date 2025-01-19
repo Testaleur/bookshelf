@@ -1,3 +1,14 @@
+:root {
+    --button-color: #268a4e;
+    --title-color: white;
+    --book-color: #268a4e;
+    --book-color-hover: #1f6f3c;
+    --movie-color: #5c2e7b;
+    --movie-color-hover: #4e2868;
+    --series-color: #be6a21;
+    --series-color-hover: #97551b;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -99,7 +110,6 @@ button:hover {
     transform: rotate(180deg);
     font-size: 1rem;
     text-align: center;
-    background-color: var(--button-color);
     color: var(--title-color);
     border: none;
     border-radius: 0.3rem;
@@ -110,13 +120,28 @@ button:hover {
     transition: background-color 0.1s ease;
 }
 
-.book:hover {
-    background-color: #1f6f3c;
+.book.Book{
+    background-color: var(--book-color);
 }
 
-:root {
-    --button-color: #268a4e;
-    --title-color: white;
+.book.Book:hover {
+    background-color: var(--book-color-hover) ;
+}
+
+.book.Series{
+    background-color: var(--series-color);
+}
+
+.book.Series:hover {
+    background-color: var(--series-color-hover);
+}
+
+.book.Movie{
+    background-color: var(--movie-color);
+}
+
+.book.Movie:hover {
+    background-color: var(--movie-color-hover);
 }
 
 #researchButton{
@@ -143,9 +168,20 @@ button:hover {
     align-items: center;
     padding: 1rem;
     box-sizing: border-box;
-    border: 0.8rem solid #333;
     border-radius: 1rem;
     z-index: 100;
+}
+
+.book-page.Series{
+    border: 0.8rem solid var(--series-color);
+}
+
+.book-page.Book{
+    border: 0.8rem solid #268a4e;
+}
+
+.book-page.Movie{
+    border: 0.8rem solid var(--movie-color) ;
 }
 
 #bookTitle{
@@ -243,8 +279,8 @@ button:hover {
 .add-book-content{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
 }
 
 #bookPageBtnContainer{

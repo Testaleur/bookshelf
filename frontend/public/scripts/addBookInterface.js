@@ -24,13 +24,8 @@ document.getElementById('closeInterfaceBtn').addEventListener('click', function(
 });
 
 function clearForm(){
-    // const titleInput = document.getElementById('titleInput');
-    // const authorInput = document.getElementById('authorInput');
-    // const dateInput = document.getElementById('dateInput');
-    // const ratingInput = document.getElementById('ratingInput');
-    // const commentsInput = document.getElementById('commentsInput');
-
     titleInput.value = "";
+    typeInput.selectedIndex = 0;
     authorInput.value = "";
     dateInput.value = "";
     ratingInput.value = 0;

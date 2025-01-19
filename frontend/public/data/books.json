@@ -1,55 +1,26 @@
 [
   {
-    "title": "Tom Sawyer"
-  },
-  {
-    "title": "1984"
-  },
-  {
-    "title": "Harry Potter"
-  },
-  {
-    "title": "Tom Sawyer"
-  },
-  {
-    "title": "Moby Dick"
-  },
-  {
-    "title": "1984"
-  },
-  {
-    "title": "To Kill a Mockingbird"
-  },
-  {
-    "title": "Harry Potter"
-  },
-  {
-    "title": "Tom Sawyer"
-  },
-  {
-    "title": "Moby Dick"
-  },
-  {
-    "title": "1984"
-  },
-  {
-    "title": "To Kill a Mockingbird"
-  },
-  {
-    "title": "Harry Potter"
-  },
-  {
-    "title": "a",
-    "author": "b",
-    "date": "18/01/2025",
-    "rating": "5",
+    "title": " Simetierre",
+    "type": "Book",
+    "author": "Stephen King",
+    "date": "19/03/2025",
+    "rating": "8",
     "comments": ""
   },
   {
-    "title": "a",
-    "author": "b",
-    "date": "18/01/2025",
-    "rating": "5",
+    "title": "Fight Club",
+    "type": "Movie",
+    "author": "David Fincher",
+    "date": "1/10/2022",
+    "rating": "10",
     "comments": ""
+  },
+  {
+    "title": "Sense8",
+    "type": "Series",
+    "author": "Lana et Lilly Wachowski",
+    "date": "02/01/2025",
+    "rating": "8",
+    "comments": "Avec Ju"
   }
 ]

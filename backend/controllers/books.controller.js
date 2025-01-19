@@ -28,6 +28,7 @@ export const addBook = (req, res) => {
             }
             res.json({ message: `Received data: new book title = ${newBook.title}`,
                 title : newBook.title,
+                type : newBook.type,
                 author : newBook.author,
                 date : newBook.date,
                 rating : newBook.rating,
