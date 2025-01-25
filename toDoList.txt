@@ -1,7 +1,7 @@
 edit a book
-order css files
+order css files + js
 
-filter button page
+filter button page OK > more filtering options
 sort button page
 search option
 

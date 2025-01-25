@@ -54,5 +54,13 @@
     "date": "19/08/2022",
     "rating": "9",
     "comments": ""
+  },
+  {
+    "title": "Le géant de fer",
+    "type": "Movie",
+    "author": "Brad Bird",
+    "date": "5/11/2024",
+    "rating": "7",
+    "comments": "pas aussi bien que quand j'étais petit mais masterclass quand même"
   }
 ]

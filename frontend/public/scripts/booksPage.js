@@ -1,9 +1,19 @@
-function openPage(title, description, bookType) {
+function openPage(title, type, author, date, bookRating, comments, bookType) {
+
     const bookPage = document.getElementById('bookPage');
-    const bookTitle = document.getElementById('bookTitle');
-    const bookDescription = document.getElementById('bookDescription');
-    bookTitle.textContent = title;
-    bookDescription.innerHTML = description.replace(/\n/g, '<br>');
+    const bookTitleDisplay = document.getElementById('bookTitle');
+    const bookTypeDisplay = document.getElementById('typeDisplay');
+    const bookAuthorDisplay = document.getElementById('authorDisplay');
+    const bookDateDisplay = document.getElementById('dateDisplay');
+    const bookRatingDisplay = document.getElementById('ratingDisplay');
+    const bookCommentsDisplay = document.getElementById('commentsDisplay');
+
+    bookTitleDisplay.textContent = title;
+    bookTypeDisplay.innerHTML = "Type : " + type;
+    bookAuthorDisplay.innerHTML = "Author : " + author;
+    bookDateDisplay.innerHTML = "Date : " + date;
+    highlightStarsDisplayed(bookRating);
+    bookCommentsDisplay.innerHTML = "Comments : " + comments;
 
     bookPage.style.display = 'flex'; // box 
     bookPage.classList.add(bookType=="Not specified" ? "Book" : bookType);
@@ -23,22 +33,18 @@ function closeBookPage(){
     bookPage.style.display = 'none';
     bookPage.classList.remove(bookPage.classList[bookPage.classList.length - 1]);
     resetButtonDelete()
+    highlightStarsDisplayed()
 }
 
 function addPageToABook(book, bookTitle, bookType, bookAuthor, bookDate, bookRating, bookComments) {
     book.addEventListener('click', function () {
         title = bookTitle.trim();
-        description = `
-            Type: ${bookType.trim()}\n
-            Author: ${bookAuthor.trim()}\n
-            Finish Date: ${bookDate.trim()}\n
-            Rating: ${
-                bookRating == "0"
-                    ? "-"
-                    : "★".repeat(bookRating) + "☆".repeat(10 - bookRating)
-            }\n
-            Comments: ${bookComments.trim()}
-        `;
-        openPage(title, description, bookType);
+        type = bookType.trim()
+        author = bookAuthor.trim()
+        date = bookDate.trim()
+        rating = bookRating.trim() 
+        comments = bookComments.trim()
+
+        openPage(title, type, author, date, rating, comments, bookType);
     });
 }

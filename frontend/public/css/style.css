@@ -256,6 +256,7 @@ button:hover {
 #deleteBookBtn.confirmation:hover {
     background-color: gray;
 }
+
 .book-content{
     display: flex;
     flex-direction: column;
@@ -323,7 +324,12 @@ button:hover {
 .star.selected {
     color: gold;
 }
+
 #starsContainer {
+    display: inline-block;
+}
+
+#starsContainerDisplay {
     display: inline-block;
 }
 
@@ -414,6 +420,33 @@ button:hover {
 #typeInputFilter option[value="Series"] {
     background-color: var(--series-color);
     color: white;
+}
+
+.informationContainer{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 20rem;
+    min-width: 15rem;
+    margin: 0rem;
+    font-size: 1rem;
+}
+
+#bookCommentsDisplay {
+    max-width: 10rem;
+    display: block;
+    white-space: pre-wrap;
+}
+
+.infoDisplayer{
+    margin: 1rem;
+}
+
+#bookTitle{
+    margin-bottom: 1rem;
 }
 
 /* border: #1f6f3c 0.2rem solid; */

@@ -48,36 +48,7 @@ function preFillForm(){
 }
 
 const starsContainer = document.getElementById('starsContainer');
-
-// create the stars
-function createStars(){
-    for (let i = 1; i <= 10; i++) {
-        const star = document.createElement('span');
-        star.classList.add('star');
-        star.textContent = '★';
-        star.dataset.value = i;
-    
-        star.addEventListener('click', () => {
-            const selectedRating = star.dataset.value;
-            ratingInput.value = selectedRating;
-            highlightStars(selectedRating);
-        });
-    
-        starsContainer.appendChild(star);
-    }
-}
-
-function highlightStars(rating) {
-    const stars = starsContainer.querySelectorAll('.star');
-    stars.forEach(star => {
-        const starValue = Number(star.dataset.value);
-        if (starValue <= rating) {
-            star.classList.add('selected');
-        } else {
-            star.classList.remove('selected');
-        }
-    });
-}
+const starsContainerDisplay = document.getElementById('starsContainerDisplay');
 
 window.onload = ()=>{
     createStars()

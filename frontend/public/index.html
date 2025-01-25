@@ -35,8 +35,36 @@
         <!-- book page -->
         <div id="bookPage" class="book-page">
             <div class="book-content">
-                <div id="bookTitle">Title : </div>
-                <div id="bookDescription"></div>
+                <div id="bookTitle">Title :</div>
+
+                <div class = informationContainer>
+                    <div class = infoDisplayer id="typeDisplay" name="typeDisplay">
+                    </div>
+                </div>
+                
+                <div class = informationContainer>
+                    <div class = infoDisplayer id="authorDisplay" name="authorDisplay">
+                    </div>
+                </div>
+
+                <div class = informationContainer>
+                    <div class = infoDisplayer id="dateDisplay" name="dateDisplay">
+                    </div>
+                </div>
+
+                <div class = informationContainer>
+                    <div class = infoDisplayer id="ratingDisplay" name="ratingDisplay">
+                        Rating :
+                        <div id="starsContainerDisplay">
+                        </div>
+                    </div>
+                </div>
+
+                <div class = informationContainer>
+                    <div class = infoDisplayer id="commentsDisplay" name="commentsDisplay">
+                    </div>
+                </div>
+
                 <div id = "bookPageBtnContainer">
                     <button id="bookCloseBtn">Close</button>
                     <button id="deleteBookBtn" class="default">Delete</button>
@@ -102,7 +130,7 @@
         <!-- overlay new book -->
         <div class="overlay" onclick="closeAddBookPage()"></div>
 
-        <!-- new book page -->
+        <!-- filter page -->
         <div id="filterPage" class="button-interface">
             <div class="filter-content">
                 <div class = "buttonTitle">Filter :</div>
@@ -134,6 +162,7 @@
     <script src="scripts/deleteBook.js"></script>
     <script src="scripts/filteringBooks.js"></script>
     <script src="scripts/updateBookshelves.js"></script>
+    <script src="scripts/stars.js"></script>
     
 </body>
 </html>
