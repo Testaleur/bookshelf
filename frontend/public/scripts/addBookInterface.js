@@ -19,7 +19,7 @@ function closeAddBookPage(){
     clearForm()
 }
 
-document.getElementById('closeInterfaceBtn').addEventListener('click', function() {
+document.getElementById('closeAddBookBtn').addEventListener('click', function() {
     closeAddBookPage();
 });
 

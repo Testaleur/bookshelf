@@ -1,0 +1,18 @@
+#displayStatsContainer {
+    background-color: var(--main-theme-color);
+    color: white;
+    border-radius: 0.5rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width : 30rem;
+    margin-bottom: 1rem;
+}
+
+.displayStat{
+    font-family: bold;
+    margin: 1rem;
+    font-size: 1.4rem;
+    color: #333;
+}

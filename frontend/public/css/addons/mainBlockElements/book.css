@@ -1,0 +1,38 @@
+.book {
+    writing-mode:vertical-rl;
+    transform: rotate(180deg);
+    font-size: 1rem;
+    text-align: center;
+    color: var(--title-color);
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    outline: none;
+    margin: 0 0.0625rem;
+    color : white;
+    transition: background-color 0.1s ease;
+}
+
+.book.Book{
+    background-color: var(--book-color);
+}
+
+.book.Book:hover {
+    background-color: var(--book-color-hover) ;
+}
+
+.book.Series{
+    background-color: var(--series-color);
+}
+
+.book.Series:hover {
+    background-color: var(--series-color-hover);
+}
+
+.book.Movie{
+    background-color: var(--movie-color);
+}
+
+.book.Movie:hover {
+    background-color: var(--movie-color-hover);
+}

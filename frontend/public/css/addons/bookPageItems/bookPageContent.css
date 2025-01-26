@@ -1,0 +1,38 @@
+#bookTitle{
+    font:bold;
+    font-size: 2rem;
+}
+
+.book-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.informationContainer{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 20rem;
+    min-width: 15rem;
+    margin: 0rem;
+    font-size: 1rem;
+}
+
+#bookCommentsDisplay {
+    max-width: 10rem;
+    display: block;
+    white-space: pre-wrap;
+}
+
+.infoDisplayer{
+    margin: 1rem;
+}
+
+#bookTitle{
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,39 @@
+@import 'addBook.css';
+@import 'researchBook.css';
+@import 'filtering.css';
+
+#buttonsContainer {
+    background-color: var(--main-theme-color);
+    color: white;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    width : 55rem;
+}
+
+.parameterButton {
+    background-color: #95d5b4;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    transition: background-color 0.3s;
+    color : #333;
+    transition: background-color 0.3s ease;
+}
+
+.buttonTitle{
+    font:bold;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+button:hover {
+    background-color: #5cae7e;
+}

@@ -1,0 +1,29 @@
+@import 'bookPageButtons.css';
+@import 'bookPageContent.css';
+
+.book-page {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.891);
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    z-index: 100;
+}
+
+.book-page.Series{
+    border: 0.8rem solid var(--series-color);
+}
+
+.book-page.Book{
+    border: 0.8rem solid var(--main-theme-color);
+}
+
+.book-page.Movie{
+    border: 0.8rem solid var(--movie-color) ;
+}

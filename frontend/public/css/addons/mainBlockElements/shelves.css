@@ -1,0 +1,26 @@
+#shelvesContainer {
+    background-color: var(--main-theme-color);
+    color: white;
+    border : #333 0.15rem solid;
+    border-radius: 0.5rem;
+    display: inline-block;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 90%;
+    width : 55rem;
+    max-width: 100%;
+}
+
+.shelf{
+    background-color: #333;
+    width: 50rem;
+    margin: 2rem;
+    height: 6rem;
+    display: flex;
+    flex-direction:row;
+    align-items: flex-end;
+    justify-content: start;
+    border: #493c3c 0.5rem solid;
+    border-radius: 0.2rem;
+    overflow: hidden;
+}

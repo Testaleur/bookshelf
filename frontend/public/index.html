@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Bookshelf</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
@@ -13,15 +13,17 @@
         <h1>My Bookshelf</h1>
     </header>
     <main>
-        <!-- shelves -->
+        <!-- main -->
         <div id = mainContainer>
+            <!-- parameters buttons -->
             <div id = buttonsContainer> 
                 <button class = "parameterButton" id="addBookOpenInterface"><i class = "fa fa-plus"></i> New book</button>
                 <button class = "parameterButton" id="filterButton"><i class = "fa fa-filter"></i> Filter</button>
                 <button class = "parameterButton" id="sortButton"><i class = "fa fa-sort-alpha-asc"></i> Sort</button>
                 <button class = "parameterButton" id="researchButton"><i class = "fa fa-search"></i> Search</button>
             </div>
-            <div id = displayContainer>
+            <!-- stats -->
+            <div id = displayStatsContainer>
                 <div class = displayStat>
                     | Total books: 50 |
                 </div>
@@ -29,6 +31,7 @@
                     | Displayed books : 50 |
                 </div>
             </div>
+            <!-- shelves -->
             <div id="shelvesContainer"></div>
         </div>
 
@@ -76,7 +79,7 @@
         <div class="overlay" onclick="closeBookPage()"></div>
 
         <!-- new book page -->
-        <div id="newBookPage" class="button-interface">
+        <div id="newBookPage" class="add-book-interface">
             <div class="add-book-content">
                 <div class = "buttonTitle">Add a book :</div>
                 <div class = inputContainer>
@@ -120,8 +123,8 @@
                     <input type="text" id="colorInput" name="colorInput">
                 </div> -->
                 
-                <div id = "bookPageBtnContainer">
-                    <button id="closeInterfaceBtn">Cancel</button>
+                <div id = "addBookInterfaceBtnContainer">
+                    <button id="closeAddBookBtn">Cancel</button>
                     <button id="addBookButton"><i class = "fa fa-plus"></i> Add</button>
                 </div>
             </div>
@@ -131,7 +134,7 @@
         <div class="overlay" onclick="closeAddBookPage()"></div>
 
         <!-- filter page -->
-        <div id="filterPage" class="button-interface">
+        <div id="filterPage" class="filter-interface">
             <div class="filter-content">
                 <div class = "buttonTitle">Filter :</div>
                 <div class = filterOption>

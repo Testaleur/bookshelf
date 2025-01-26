@@ -1,0 +1,52 @@
+/* main elements */
+@import 'addons/mainBlockElements/book.css';
+@import 'addons/mainBlockElements/shelves.css';
+@import 'addons/mainBlockElements/displayStats.css';
+@import 'addons/mainBlockElements/overlays.css';
+/* functionnal elements */
+@import 'addons/parametersButtons/parametersButtonsMain.css';
+@import 'addons/bookPageItems/bookPageMain.css';
+
+:root {
+    --main-theme-color: #268a4e;
+    --background-main-color : #aadcd0;
+
+    --title-color: white;
+
+    --book-color: var(--main-theme-color);
+    --book-color-hover: #1f6f3c;
+
+    --movie-color: #5c2e7b; 
+    --movie-color-hover: #4e2868;
+
+    --series-color: #be6a21;
+    --series-color-hover: #97551b;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: var(--background-main-color);
+    color: #333;
+}
+
+header {
+    background-color: var(--main-theme-color);
+    color: #f8f0f0;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+#mainContainer {
+    background-color: var(--background-main-color);
+    color: white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    overflow: hidden;
+}
+
+/* border: #1f6f3c 0.2rem solid; */

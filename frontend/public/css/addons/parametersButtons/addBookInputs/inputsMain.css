@@ -1,0 +1,34 @@
+.inputContainer{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+}
+
+#commentsInput{
+    font-family: Arial, sans-serif;
+    font-size: 0.85rem;
+    resize: none; 
+}
+
+.star {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: gray;
+    user-select: none;
+}
+.star.selected {
+    color: gold;
+}
+
+#starsContainer {
+    display: inline-block;
+}
+
+#starsContainerDisplay {
+    display: inline-block;
+}
+

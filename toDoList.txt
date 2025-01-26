@@ -1,5 +1,6 @@
 edit a book
-order css files + js
+order css files + colors
+order js files
 
 filter button page OK > more filtering options
 sort button page

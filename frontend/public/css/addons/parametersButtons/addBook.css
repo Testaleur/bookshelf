@@ -1,0 +1,57 @@
+@import 'addBookInputs/inputsMain.css';
+
+.add-book-interface {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.891);
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    z-index: 100;
+    border: #333 0.4rem solid;
+}
+
+.add-book-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+
+#addBookInterfaceBtnContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap : 0.5rem;
+    margin-top: 1rem;
+}
+
+#addBookButton{
+    padding : 0.1rem;
+    padding-inline: 0.5rem;
+    background-color: rgb(147, 208, 144);
+    border: 1rem rgb(0, 0, 0);
+    border-radius: 0.2rem;
+}
+
+#addBookButton:hover{
+    background-color: #36b368;
+}
+
+#closeAddBookBtn{
+    padding : 0.1rem;
+    padding-inline: 0.5rem;
+    background-color: rgb(229, 128, 128);
+    border: 1rem rgb(0, 0, 0);
+    border-radius: 0.2rem;
+    transition: background-color 0.3s ease;
+}
+
+#closeAddBookBtn:hover{
+    background-color: #dd5b5b;
+}
