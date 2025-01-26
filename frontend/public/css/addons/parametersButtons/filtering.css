@@ -4,14 +4,15 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.891);
+    background-color: var(--interface-page-color);
+    opacity: 0.891;
     justify-content: center;
     align-items: center;
     padding: 1rem;
     box-sizing: border-box;
     border-radius: 1rem;
     z-index: 100;
-    border: #333 0.4rem solid;
+    border: var(--counter-background-color) 0.4rem solid;
 }
 
 .filter-content{
@@ -24,53 +25,50 @@
 #closeFilterBtn{
     padding : 0.1rem;
     padding-inline: 0.5rem;
-    background-color: rgb(229, 128, 128);
-    border: 1rem rgb(0, 0, 0);
+    background-color: var(--button-deny-color);
+    border: 1rem;
     border-radius: 0.2rem;
     transition: background-color 0.3s ease;
 }
 
 #closeFilterBtn:hover{
-    background-color: #dd5b5b;
+    background-color: var(--button-deny-hovering-color);
 }
 
 #applyTheFilterBtn{
     padding : 0.1rem;
     padding-inline: 0.5rem;
-    background-color: rgb(147, 208, 144);
-    border: 1rem rgb(0, 0, 0);
+    background-color: var(--button-accept-color);
+    border: 1rem ;
     border-radius: 0.2rem;
     transition: background-color 0.3s ease;
 }
 
 #applyTheFilterBtn:hover{
-    background-color: #36b368;
+    background-color: var(--button-accept-hovering-color);
 }
 
 #resetFilterBtn{
     padding : 0.1rem;
     padding-inline: 0.5rem;
-    background-color: rgb(240, 185, 46);
-    border: 1rem rgb(0, 0, 0);
+    background-color: var(--button-intermediate-color);
+    border: 1rem ;
     border-radius: 0.2rem;
     transition: background-color 0.3s ease;
 }
 
 #resetFilterBtn:hover{
-    background-color: #e19626;
+    background-color: var(--button-intermediate-hovering-color);
 }
 
 #typeInputFilter option[value="Book"] {
     background-color: var(--book-color);
-    color: white;
 }
 
 #typeInputFilter option[value="Movie"] {
     background-color: var(--movie-color);
-    color: white;
 }
 
 #typeInputFilter option[value="Series"] {
     background-color: var(--series-color);
-    color: white;
 }

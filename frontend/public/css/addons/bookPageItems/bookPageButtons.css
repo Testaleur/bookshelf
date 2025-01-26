@@ -9,20 +9,20 @@
 #bookCloseBtn{
     padding : 0.1rem;
     padding-inline: 0.5rem;
-    background-color: rgb(147, 208, 144);
+    background-color: var(--button-accept-color);
     border: 1rem rgb(0, 0, 0);
     border-radius: 0.2rem;
     transition: background-color 0.3s ease;
 }
 
 #bookCloseBtn:hover{
-    background-color: #36b368;
+    background-color: var(--button-accept-hovering-color)
 }
 
 #deleteBookBtn.default {
     padding : 0.1rem;
     padding-inline: 0.5rem;
-    background-color: rgb(229, 128, 128);
+    background-color: var(--button-deny-color);
     border: 1rem rgb(0, 0, 0);
     border-radius: 0.2rem;
     cursor: pointer;
@@ -30,12 +30,12 @@
 }
 
 #deleteBookBtn.default:hover {
-    background-color: #dd5b5b;
+    background-color: var(--button-deny-hovering-color);
 }
 
 #deleteBookBtn.confirmation {
-    background-color: black;
-    color: rgb(255, 255, 255);
+    background-color: var(--confirm-delete-color);
+    color: var(--text-confirm-delete-color);
     transition: background-color 0.3s ease;
     padding : 0.1rem;
     padding-inline: 0.5rem;
@@ -46,5 +46,5 @@
 }
 
 #deleteBookBtn.confirmation:hover {
-    background-color: gray;
+    background-color:var(--confirm-delete-hovering-color);
 }

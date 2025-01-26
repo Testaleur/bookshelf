@@ -17,11 +17,11 @@
 .star {
     font-size: 1.5rem;
     cursor: pointer;
-    color: gray;
+    color : var(--empty-star-color);
     user-select: none;
 }
 .star.selected {
-    color: gold;
+    color : var(--full-star-color);
 }
 
 #starsContainer {

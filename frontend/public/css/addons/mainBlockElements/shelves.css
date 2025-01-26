@@ -1,7 +1,6 @@
 #shelvesContainer {
     background-color: var(--main-theme-color);
-    color: white;
-    border : #333 0.15rem solid;
+    border : var(--counter-background-color) 0.15rem solid;
     border-radius: 0.5rem;
     display: inline-block;
     overflow-y: auto;
@@ -12,7 +11,7 @@
 }
 
 .shelf{
-    background-color: #333;
+    background-color: var(--counter-background-color);
     width: 50rem;
     margin: 2rem;
     height: 6rem;
@@ -20,7 +19,7 @@
     flex-direction:row;
     align-items: flex-end;
     justify-content: start;
-    border: #493c3c 0.5rem solid;
+    border: var(--shelves-wood-color) 0.5rem solid;
     border-radius: 0.2rem;
     overflow: hidden;
 }

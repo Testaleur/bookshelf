@@ -1,0 +1,47 @@
+:root {
+    /* main system colors */
+    --main-theme-color: #268a4e;
+    --background-main-color : #aadcd0;
+    --counter-background-color : #333;
+    --title-color: white;
+
+    /* button colors */
+    --parameter-button-color : #95d5b4;
+    --parameter-button-hovering-color : #5cae7e;
+
+    --button-accept-color : #93d090;
+    --button-accept-hovering-color : #36b368;
+
+    --button-deny-color : #e58080;
+    --button-deny-hovering-color : #dd5b5b;
+
+    --button-intermediate-color : #f0b92e ;
+    --button-intermediate-hovering-color : #e19626 ;
+
+    --confirm-delete-color : black;
+    --text-confirm-delete-color : white;
+    --confirm-delete-hovering-color : gray;
+
+    /* interface page */
+    --interface-page-color : white;
+
+    /* books */
+    --book-color: var(--main-theme-color);
+    --book-color-hover: #1f6f3c;
+
+    --movie-color: #5c2e7b; 
+    --movie-color-hover: #4e2868;
+
+    --series-color: #be6a21;
+    --series-color-hover: #97551b;
+
+    /* shelves */
+    --shelves-wood-color : #493c3c;
+
+    /* overlays */
+    --overlay-color : black;
+
+    /* inputs */
+    --empty-star-color : gray;
+    --full-star-color : gold;
+}

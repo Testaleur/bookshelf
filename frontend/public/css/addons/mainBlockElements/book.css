@@ -9,7 +9,6 @@
     cursor: pointer;
     outline: none;
     margin: 0 0.0625rem;
-    color : white;
     transition: background-color 0.1s ease;
 }
 

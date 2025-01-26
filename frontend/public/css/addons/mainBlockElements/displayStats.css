@@ -1,6 +1,5 @@
 #displayStatsContainer {
     background-color: var(--main-theme-color);
-    color: white;
     border-radius: 0.5rem;
     display:flex;
     align-items: center;
@@ -14,5 +13,5 @@
     font-family: bold;
     margin: 1rem;
     font-size: 1.4rem;
-    color: #333;
+    color: var(--counter-background-color);
 }

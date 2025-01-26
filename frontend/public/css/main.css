@@ -6,22 +6,8 @@
 /* functionnal elements */
 @import 'addons/parametersButtons/parametersButtonsMain.css';
 @import 'addons/bookPageItems/bookPageMain.css';
-
-:root {
-    --main-theme-color: #268a4e;
-    --background-main-color : #aadcd0;
-
-    --title-color: white;
-
-    --book-color: var(--main-theme-color);
-    --book-color-hover: #1f6f3c;
-
-    --movie-color: #5c2e7b; 
-    --movie-color-hover: #4e2868;
-
-    --series-color: #be6a21;
-    --series-color-hover: #97551b;
-}
+/* colors */
+@import 'colors.css';
 
 body {
     font-family: Arial, sans-serif;

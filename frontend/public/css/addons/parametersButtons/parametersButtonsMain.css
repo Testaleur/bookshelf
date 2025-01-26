@@ -4,7 +4,6 @@
 
 #buttonsContainer {
     background-color: var(--main-theme-color);
-    color: white;
     border-radius: 0.5rem;
     display: flex;
     justify-content: space-between;
@@ -14,7 +13,7 @@
 }
 
 .parameterButton {
-    background-color: #95d5b4;
+    background-color:var(--parameter-button-color);
     border: none;
     padding: 0.6rem 1.2rem;
     margin-left: 1rem;
@@ -24,7 +23,7 @@
     cursor: pointer;
     border-radius: 0.2rem;
     transition: background-color 0.3s;
-    color : #333;
+    color : var(--counter-background-color);
     transition: background-color 0.3s ease;
 }
 
@@ -35,5 +34,5 @@
 }
 
 button:hover {
-    background-color: #5cae7e;
+    background-color: var(--parameter-button-hovering-color);
 }

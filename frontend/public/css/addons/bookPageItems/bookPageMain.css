@@ -7,7 +7,8 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.891);
+    background-color: var(--interface-page-color);
+    opacity: 0.891;
     justify-content: center;
     align-items: center;
     padding: 1rem;
