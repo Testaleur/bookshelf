@@ -1,5 +1,6 @@
 @import 'bookPageButtons.css';
 @import 'bookPageContent.css';
+@import 'bookPageEditBook.css';
 
 .book-page {
     display: none;

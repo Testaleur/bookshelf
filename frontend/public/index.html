@@ -71,12 +71,62 @@
                 <div id = "bookPageBtnContainer">
                     <button id="bookCloseBtn">Close</button>
                     <button id="deleteBookBtn" class="default">Delete</button>
+                    <button id="editBookBtn"><i class="fa fa-edit"></i></button>
                 </div>
             </div>
         </div>
 
         <!-- overlay book page -->
-        <div class="overlay" onclick="closeBookPage()"></div>
+        <div class="overlay" id = "overlayBookPage" onclick="closeBookPage()"></div>
+
+        <!-- edit book interface -->
+        <div id="editBookPage" class="edit-book-interface">
+            <div class="edit-book-content">
+                <div class = inputContainer>
+                    <label for="titleInput">Title : </label>
+                    <input type="text" id="titleInput" name="titleInput">
+                </div>
+
+                <div class = inputContainer>
+                    <label for="typeInput">Type of book : </label>
+                    <select id="typeInput" name="typeInput">
+                        <option value="Book">Book</option>
+                        <option value="Movie">Movie</option>
+                        <option value="Series">Series</option>
+                    </select>
+                </div>
+                
+                <div class = inputContainer>
+                    <label for="authorInput">Author : </label>
+                    <input type="text" id="authorInput" name="authorInput">
+                </div>
+
+                <div class = inputContainer>
+                    <label for="dateInput">Date : </label>
+                    <input type="text" id="dateInput" name="dateInput">
+                </div>
+
+                <div class="inputContainer">
+                    <label for="ratingInput">Rating : </label>
+                    <div id="starsContainer">
+                    </div>
+                    <input type="hidden" id="ratingInput" name="ratingInput">
+                </div>
+
+                <div class = inputContainer>
+                    <label for="commentsInput">Comments : </label>
+                    <textarea id="commentsInput" name="commentsInput" rows="3"></textarea>
+                </div>
+                
+                <div id = "editBookBtnContainer">
+                    <button id="closeEditBookBtn">Cancel</button>
+                    <button id="saveEditionBtn"><i class = "fa fa-plus"></i> Save</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- overlay edit book -->
+        <div class="overlay" id = "overlayEditBook" onclick="closeEditBookPage()"></div>
 
         <!-- new book page -->
         <div id="newBookPage" class="add-book-interface">
@@ -131,7 +181,7 @@
         </div>
 
         <!-- overlay new book -->
-        <div class="overlay" onclick="closeAddBookPage()"></div>
+        <div class="overlay" id = "overlayNewBook" onclick="closeAddBookPage()"></div>
 
         <!-- filter page -->
         <div id="filterPage" class="filter-interface">
@@ -146,7 +196,7 @@
                         <option value="Series">Series</option>
                     </select>
                 </div>
-                <div id = "bookPageBtnContainer">
+                <div id = "filterInterfaceBtnContainer">
                     <button id="closeFilterBtn">Cancel</button>
                     <button id="resetFilterBtn">Reset</button>
                     <button id="applyTheFilterBtn"><i class = "fa fa-filter"></i> Apply</button>
@@ -155,7 +205,7 @@
         </div>
 
         <!-- overlay filter -->
-        <div class="overlay" onclick="closeFilterInterface()"></div>
+        <div class="overlay" id = "overlayFilter" onclick="closeFilterInterface()"></div>
 
     </main>
     <script src="scripts/addBookServer.js"></script>
@@ -166,6 +216,7 @@
     <script src="scripts/filteringBooks.js"></script>
     <script src="scripts/updateBookshelves.js"></script>
     <script src="scripts/stars.js"></script>
+    <script src="scripts/editBookInterface.js"></script>
     
 </body>
 </html>

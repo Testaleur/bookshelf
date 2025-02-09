@@ -11,8 +11,8 @@
 }
 
 .informationContainer{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
     display: flex;
     flex-direction: row;
     align-items: center;

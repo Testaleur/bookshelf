@@ -7,13 +7,13 @@ function openFilterInterface(){
     filterPage.style.display = 'flex';
     typeInputFilter.value = currentFilteringOptions.type;
 
-    const overlay = document.getElementsByClassName('overlay');
-    overlay[2].style.display = 'flex'; 
+    const overlay = document.getElementById('overlayFilter');
+    overlay.style.display = 'flex'; 
     document.body.style.overflow = 'hidden';
 }
 
 function closeFilterInterface(){
-    document.getElementsByClassName('overlay')[2].style.display = 'none';
+    document.getElementById('overlayFilter').style.display = 'none';
     document.getElementById('filterPage').style.display = 'none';
 }
 

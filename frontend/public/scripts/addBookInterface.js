@@ -8,13 +8,13 @@ function openAddBookInterface(){
     newBookPage.style.display = 'flex';
     preFillForm()
 
-    const overlay = document.getElementsByClassName('overlay');
-    overlay[1].style.display = 'flex'; 
+    const overlay = document.getElementById('overlayNewBook');
+    overlay.style.display = 'flex'; 
     document.body.style.overflow = 'hidden';
 }
 
 function closeAddBookPage(){
-    document.getElementsByClassName('overlay')[1].style.display = 'none';
+    document.getElementById('overlayNewBook').style.display = 'none';
     document.getElementById('newBookPage').style.display = 'none';
     clearForm()
 }

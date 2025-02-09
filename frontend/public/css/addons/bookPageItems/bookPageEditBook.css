@@ -1,4 +1,6 @@
-.filter-interface {
+/* @import 'addBookInputs/inputsMain.css'; */
+
+.edit-book-interface {
     display: none;
     position: fixed;
     left: 50%;
@@ -15,14 +17,14 @@
     border: var(--counter-background-color) 0.4rem solid;
 }
 
-.filter-content{
+.edit-book-content{
     display: flex;
     flex-direction: column;
     justify-content: left;
     align-items: left;
 }
 
-#filterInterfaceBtnContainer{
+#editBookBtnContainer{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,7 +32,20 @@
     margin-top: 1rem;
 }
 
-#closeFilterBtn{
+#saveEditionBtn{
+    padding : 0.1rem;
+    padding-inline: 0.5rem;
+    background-color: var(--button-accept-color);
+    border: 1rem rgb(0, 0, 0);
+    border-radius: 0.2rem;
+    transition: background-color 0.3s ease;
+}
+
+#saveEditionBtn:hover{
+    background-color: var(--button-accept-hovering-color);
+}
+
+#closeEditBookBtn{
     padding : 0.1rem;
     padding-inline: 0.5rem;
     background-color: var(--button-deny-color);
@@ -39,44 +54,6 @@
     transition: background-color 0.3s ease;
 }
 
-#closeFilterBtn:hover{
+#closeEditBookBtn:hover{
     background-color: var(--button-deny-hovering-color);
-}
-
-#applyTheFilterBtn{
-    padding : 0.1rem;
-    padding-inline: 0.5rem;
-    background-color: var(--button-accept-color);
-    border: 1rem ;
-    border-radius: 0.2rem;
-    transition: background-color 0.3s ease;
-}
-
-#applyTheFilterBtn:hover{
-    background-color: var(--button-accept-hovering-color);
-}
-
-#resetFilterBtn{
-    padding : 0.1rem;
-    padding-inline: 0.5rem;
-    background-color: var(--button-intermediate-color);
-    border: 1rem ;
-    border-radius: 0.2rem;
-    transition: background-color 0.3s ease;
-}
-
-#resetFilterBtn:hover{
-    background-color: var(--button-intermediate-hovering-color);
-}
-
-#typeInputFilter option[value="Book"] {
-    background-color: var(--book-color);
-}
-
-#typeInputFilter option[value="Movie"] {
-    background-color: var(--movie-color);
-}
-
-#typeInputFilter option[value="Series"] {
-    background-color: var(--series-color);
 }

@@ -18,8 +18,8 @@ function openPage(title, type, author, date, bookRating, comments, bookType) {
     bookPage.style.display = 'flex'; // box 
     bookPage.classList.add(bookType=="Not specified" ? "Book" : bookType);
 
-    const overlay = document.getElementsByClassName('overlay');
-    overlay[0].style.display = 'flex'; // no clicking on the shelves while its open
+    const overlay = document.getElementById('overlayBookPage');
+    overlay.style.display = 'flex'; // no clicking on the shelves while its open
     document.body.style.overflow = 'hidden'; // no scrolling
 }
 
@@ -28,7 +28,7 @@ document.getElementById('bookCloseBtn').addEventListener('click', function() {
 });
 
 function closeBookPage(){
-    document.getElementsByClassName('overlay')[0].style.display = 'none';
+    document.getElementById('overlayBookPage').style.display = 'none';
     bookPage = document.getElementById('bookPage')
     bookPage.style.display = 'none';
     bookPage.classList.remove(bookPage.classList[bookPage.classList.length - 1]);
@@ -47,4 +47,14 @@ function addPageToABook(book, bookTitle, bookType, bookAuthor, bookDate, bookRat
 
         openPage(title, type, author, date, rating, comments, bookType);
     });
+}
+
+function hideBookPage(){
+    document.getElementById('bookPage').style.display = 'none';
+    // document.getElementById('overlayBookPage').style.display = 'none';
+}
+
+function showBookPage(){
+    document.getElementById('bookPage').style.display = 'flex';
+    // document.getElementById('overlayBookPage').style.display = 'flex';
 }
