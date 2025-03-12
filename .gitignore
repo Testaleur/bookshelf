@@ -19,3 +19,6 @@ Thumbs.db
 .idea/
 *.sublime-project
 *.sublime-workspace
+
+# data
+frontend/public/data/books.json
