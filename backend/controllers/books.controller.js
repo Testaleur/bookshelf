@@ -68,3 +68,40 @@ export const deleteBook = (req, res) => {
         }
     });
 }
+
+export const editBook = (req, res) => {
+    const editedBook = req.body;
+    fs.readFile("frontend/public/data/books.json", "utf8", (err, data) => {
+        if (err) {
+            console.error("Error reading file:", err);
+            return res.status(500).send("Error reading file");
+        }
+    
+        const jsonData = JSON.parse(data);
+        const bookIndex = jsonData.findIndex(book => {
+            return book.title == editedBook.title
+        }); // book name is its identifier
+        if (bookIndex !== -1) {
+            jsonData[bookIndex] = { ...jsonData[bookIndex], ...editedBook };
+        } else {
+            jsonData.push(editedBook);
+        }
+    
+        fs.writeFile("frontend/public/data/books.json", JSON.stringify(jsonData, null, 2), "utf8", (err) => {
+            if (err) {
+                console.error("Error writing file:", err);
+                return res.status(500).send("Error writing file");
+            }
+    
+            res.json({
+                message: `Book updated: ${editedBook.title}`,
+                title: editedBook.title,
+                type: editedBook.type,
+                author: editedBook.author,
+                date: editedBook.date,
+                rating: editedBook.rating,
+                comments: editedBook.comments,
+            });
+        });
+    });
+}

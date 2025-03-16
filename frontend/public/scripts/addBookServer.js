@@ -56,7 +56,6 @@ document.getElementById('addBookButton').addEventListener('click', () => {
     } else {
         console.log("please fill up the title field")
     }
-   
 });
 
 function prepareThePlaceForABook(dataReceived){

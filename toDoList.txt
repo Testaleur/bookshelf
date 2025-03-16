@@ -1,9 +1,12 @@
-edit a book
-order js files
+fonction hide a book / show a book, selon son ID
+edit a book => add IDs to books, so editing updates the right book
+order js files => clean laod page + load all books
 
 filter button page OK > more filtering options
 sort button page
 search option
+
+error msg when empty fields
 
 color stars in pages
 display total number of book
